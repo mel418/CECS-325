@@ -1,1 +1,18 @@
-sort: open failed: mysort.out: No such file or directory
+Generating 10000 random numbers
+argv[0]:generate
+argv[1]:10000
+argv[2]:-100000
+argv[3]:100000
+Starting system sort
+
+real	0m0.052s
+user	0m0.001s
+sys	0m0.021s
+Starting my sort
+Starting Array bubble sort with 10000 items
+Ending bubble sort
+
+real	0m0.904s
+user	0m0.738s
+sys	0m0.035s
+10000 10000 63919 mysort.out

@@ -7,12 +7,14 @@ int main(int argc, char *argv[])
   if (argc != 4)
   {
     cout<<"Please enter 3 parameters: \n";
-    cout<<"   Prameter 1: total count of numbers you want \n";
+    cout<<"   Parameter 1: total count of numbers you want \n";
     cout<<"   Parameter2: min value. \n";
     cout<<"   Parameter 3: max value. \n";
     cout<<"Example: $ generate 10000000  100000 999999\n";
     exit(EXIT_SUCCESS);
   }
+
+   cout << "Generating " << argv[1] << " random numbers\n";
 
   for (int i=0; i<argc; i++)
   {
