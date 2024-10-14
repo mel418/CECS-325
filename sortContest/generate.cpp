@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -23,6 +25,8 @@ int main(int argc, char *argv[])
   int COUNT = stoi(argv[1]);
   int MIN = stoi(argv[2]);
   int MAX = stoi(argv[3]);
+
+  srand(time(0));
 
   ofstream fout;
   fout.open("numbers.dat", ios::out);

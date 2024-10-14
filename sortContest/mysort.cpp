@@ -4,33 +4,37 @@ using namespace std;
 
 void bubble(int A[], int size)
 {
-  bool swapped;
-  for (int i = 0; i < size - 1; i++) {
-    swapped = false;
-    for (int j = 0; j < size-i-1; j++) {
+  for (int i = 1; i < size; i++) {
+    for (int j = 0; j < size-1; j++) {
       if (A[j] > A[j+1]) {
-        swap(A[j], A[j+1]);
-        swapped = true;
+        // swap(A[j], A[j+1]);
+        int temp = A[j];
+        A[j] = A[j+1];
+        A[j+1] = temp;
       }
     }
-    if (!swapped)
-      break;
   }
 }
 
 
 int main(int argc, char *argv[])
 {
-  std::ifstream fileIn(argv[1]);
+  if (argc != 3)
+  {
+    cout<<"Please enter 2 parameters: Input FileName and Output FileName\n";
+    cout<<"Example: $ mysort numbers.dat mysort.out\n";
+    exit(EXIT_SUCCESS);
+  }
 
+  std::ifstream fileIn(argv[1]);
   int numbers[1000000];
-  size_t size = 0;
+  size_t size = 0; //keep track of the number of elements read
   string num;
   while (getline(fileIn, num, '\n'))
   {
     if (size < 1000000)
     {
-      numbers[size++] = std::stoi(num);
+      numbers[size++] = stoi(num);
     }
   }
 
@@ -49,17 +53,3 @@ int main(int argc, char *argv[])
 
   return 0;
 }
-
-// const int SIZE = 10;
-// int a[SIZE] = {1,2,10,4,5,9,7,3,2,1};
-// bubble(a,SIZE);
-// // int b[5] = {59,27,100};
- // print(a,SIZE);
-
-
-// void print(int array[], int n)
-// {
-//   for (int i =0; i < n; i++)
-//     cout<<array[i]<<", ";
-//   cout<< endl;
-// }

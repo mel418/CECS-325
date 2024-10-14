@@ -5,14 +5,14 @@ argv[2]:-100000
 argv[3]:100000
 Starting system sort
 
-real	0m0.052s
-user	0m0.001s
-sys	0m0.021s
+real	0m0.025s
+user	0m0.008s
+sys	0m0.002s
 Starting my sort
 Starting Array bubble sort with 10000 items
 Ending bubble sort
 
-real	0m0.904s
-user	0m0.738s
-sys	0m0.035s
-10000 10000 63919 mysort.out
+real	0m0.513s
+user	0m0.408s
+sys	0m0.036s
+10000 10000 63968 mysort.out
