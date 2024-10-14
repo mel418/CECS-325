@@ -1,18 +1,18 @@
-Generating 10000 random numbers
+Generating 1000000 random numbers
 argv[0]:generate
-argv[1]:10000
+argv[1]:1000000
 argv[2]:-100000
 argv[3]:100000
 Starting system sort
 
-real	0m0.025s
-user	0m0.008s
-sys	0m0.002s
+real	0m1.326s
+user	0m1.873s
+sys	0m0.311s
 Starting my sort
-Starting Array bubble sort with 10000 items
+Starting Array bubble sort with 1000000 items
 Ending bubble sort
 
-real	0m0.513s
-user	0m0.408s
-sys	0m0.036s
-10000 10000 63968 mysort.out
+real	85m38.945s
+user	85m38.260s
+sys	0m0.211s
+1000000 1000000 6388651 mysort.out
