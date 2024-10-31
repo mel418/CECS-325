@@ -1,0 +1,39 @@
+=======Start=======
+root
+Thu Oct 31 13:34:39 PDT 2024
+My machine has this many processors
+8
+Generating 1000000 random numbers
+Starting system sort
+
+real	0m0.931s
+user	0m1.507s
+sys	0m0.221s
+Starting my sort
+Process 16 swap count: 977559510
+Process 14 swap count: 971302578
+Process 13 swap count: 972401396
+Process 3 swap count: 977403835
+Process 1 swap count: 974136026
+Process 15 swap count: 979493330
+Process 2 swap count: 980642700
+Process 4 swap count: 976195448
+Process 8 swap count: 973374130
+Process 6 swap count: 975665140
+Process 10 swap count: 981343832
+Process 7 swap count: 974651752
+Process 9 swap count: 977227677
+Process 12 swap count: 972278101
+Process 5 swap count: 982427925
+Process 11 swap count: 976559536
+Total Swaps:15622662916
+
+real	1m21.897s
+user	10m33.846s
+sys	0m0.221s
+-rwxrwxrwx 1 root root 7388911 Oct 31 13:38 systemsort.out
+-rwxrwxrwx 1 root root 7388911 Oct 31 13:39 mysort.out
+Comparing systemsort.out to mysort.out
+All done with diff compare
+=======End=======
+Thu Oct 31 13:39:38 PDT 2024
